@@ -1,0 +1,158 @@
+/* Publications Page Styles */
+.publications-container {
+    padding: 80px 5% 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.publication-list,
+.conference-list {
+    margin-top: 2rem;
+}
+
+.publication-item,
+.conference-item {
+    display: flex;
+    align-items: start;
+    background: rgba(17, 34, 64, 0.7);
+    border: 1px solid var(--teal);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.publication-item:hover,
+.conference-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 4px 15px rgba(32, 178, 170, 0.2);
+}
+
+.pub-icon,
+.conf-icon {
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.pub-content h3,
+.conf-content h3 {
+    color: var(--teal);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.authors,
+.event {
+    color: var(--light-slate);
+    font-size: 0.95rem;
+}
+
+.journal,
+.meta {
+    color: var(--ocean-wave);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.date,
+.location {
+    margin-right: 1rem;
+}
+
+.nav-links {
+    gap: 1rem 5rem;
+}
+
+.logo-img {
+    height: 35px;
+}
+
+
+/* Glowing Divider */
+.glowing-divider {
+    height: 1px;
+    background: linear-gradient(90deg, 
+        transparent, 
+        var(--teal), 
+        var(--ocean-wave), 
+        transparent);
+    margin: 2.5rem 0;
+    animation: glowPulse 2s infinite;
+}
+
+@keyframes glowPulse {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+}
+
+/* Navigation Styles */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 0;
+  }
+  
+  .nav-links a {
+    color: var(--teal);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0;
+    position: relative;
+  }
+  
+  .nav-links a:hover {
+    color: var(--ocean-wave);
+  }
+  
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--ocean-wave);
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .publication-item,
+    .conference-item {
+        flex-direction: column;
+        align-items: start;
+        padding: 1rem;
+    }
+    
+    .pub-icon,
+    .conf-icon {
+        margin-bottom: 1rem;
+    }
+    
+    .pub-content h3,
+    .conf-content h3 {
+        font-size: 1.1rem;
+    }
+}
