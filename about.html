@@ -10,9 +10,10 @@
 <body>
     <nav>
         <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="assets/images/starfish_5015102.png" alt="Logo" class="logo-img">
+            <a href="#" class="logo">
+                <img src="assets/images/starfish_5015102.png" alt="Your Logo" class="logo-img">
             </a>
+            <button class="mobile-menu-btn">☰</button>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -52,7 +53,6 @@
                     <img src="assets/images/About.jpg" alt="Vikas Kumar Meena" class="profile-image">
                     <div class="liquid-overlay"></div>
                 </div>
-                
                 <div class="skills-section">
                     <h3 class="skills-title">Technical Skills</h3>
                     <div class="skill-bubbles">
@@ -205,6 +205,15 @@
                     </div>
                 </section>
     </main>
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
     <script src="js/about.js"></script>
 </body>
