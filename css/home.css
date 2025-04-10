@@ -97,112 +97,54 @@
   100% { transform: scale(1); opacity: 0.8; }
 }
 
-/* Navigation Styles */
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1.5rem 2rem;
-}
 
-.nav-links {
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+/* ===== RESPONSIVE DESIGN ===== */
 
-.nav-links li {
-  margin-left: 0;
-}
+@media (max-width: 1024px) {
 
-.nav-links a {
-  color: var(--teal);
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  padding: 0.5rem 0;
-  position: relative;
-}
-
-.nav-links a:hover {
-  color: var(--ocean-wave);
-}
-
-.nav-links a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--ocean-wave);
-  transition: width 0.3s ease;
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
-
-
-/* Mobile Navigation */
-@media (max-width: 768px) {
-  .nav-container {
-      padding: 1rem;
-  }
-  
-  .nav-links {
-      gap: 1rem;
-  }
-  
-  .nav-links a {
-      font-size: 1rem;
-  }
-  
-  .logo-img {
-      height: 35px;
-  }
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
   .hero-content {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
   }
-  
-  .text-content {
-      text-align: center;
-      margin-bottom: 2rem;
-  }
-  
+
   .photo-container {
-      margin-left: 0;
+    margin-top: 100px;
+    margin-left: 0;
+    order: -1;
   }
-  
+
   .profile-photo {
-      width: 250px;
-      height: 250px;
+    width: 320px;
+    height: 320px;
   }
-  
-  .nav-links {
-      gap: 1rem 5rem;
+
+  .text-content {
+    order: 2;
+    max-width: 90%;
   }
-  
-  .logo-img {
-      height: 35px;
+  .greeting,
+  .tagline {
+    font-size: 1.8rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .bio {
+    font-size: 1rem;
+  }
+
+  .button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
   }
 }
 
-.logo-img {
-  height: 40px;
-  transition: transform 0.3s ease;
-}
 
-.logo-img:hover {
-  transform: rotate(15deg);
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
 }
