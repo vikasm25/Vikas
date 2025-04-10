@@ -112,11 +112,6 @@
   border: none;
 }
 
-/* Remove wave animation */
-@keyframes waveMove {
-  /* Remove this animation */
-}
-
 /* ===== IMAGE SECTION ===== */
 .image-section {
   position: relative;
@@ -215,36 +210,14 @@
   box-shadow: 0 8px 20px rgba(32, 178, 170, 0.3);
 }
 
-
-/* Academic Page Styles */
-.academic-container {
-  padding: 80px 5% 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Educational Qualifications */
-.qualification-cards {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.qualification-card {
-  display: flex;
-  background: rgba(17, 34, 64, 0.7);
-  border: 1px solid var(--teal);
-  border-radius: 10px;
-  padding: 1rem;
-  transition: transform 0.3s ease;
-  max-height: 180px;
-}
-
-.qualification-card:hover {
-  transform: translateY(-3px);
-}
-
 /* Academic.css */
 /* Qualification Cards */
+.qualification-card-grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
 .qualification-card {
   display: flex;
   align-items: center;
@@ -280,8 +253,8 @@
 }
 
 .edu-details {
-  padding: 0 200px;
-  flex-grow: 1;
+  margin-left: 30px;
+  padding: 0 100px;
 }
 
 .edu-details h2 {
@@ -462,7 +435,7 @@
 
 @media (max-width: 768px) {
   .qualification-card {
-      width : 85%;
+      width : 100%;
       flex-direction: column;
       max-height: 500px;
   }
