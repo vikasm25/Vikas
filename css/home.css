@@ -1,0 +1,150 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, var(--deep-blue), var(--navy));
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Updated text sizes */
+.greeting {
+  font-size: 2.75rem; /* Increased from 1.5rem */
+  margin-bottom: rem;
+}
+
+.name {
+  margin-top :1rem;
+  font-size: 3.0rem; /* Increased from 4rem */
+  margin-bottom: 0rem;
+}
+
+
+.tagline {
+  font-size: 2.75rem; /* Increased from 2rem */
+  margin-bottom: 2.5rem 0;
+}
+
+.bio {
+  font-size: 1.5rem; /* Increased from default */
+  margin-bottom: 0rem; /* Added spacing before button */
+}
+
+/* Button spacing */
+.button {
+  margin-top: 2rem; /* Additional spacing */
+  padding: 1.25rem 2.5rem; /* Larger button */
+  font-size: 1.25rem;
+}
+
+
+.photo-container {
+  position: relative;
+  margin-left: 4rem;
+}
+
+.profile-photo {
+  margin-top: 3rem;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--teal);
+  box-shadow: 0 0 30px rgba(100, 255, 218, 0.3);
+  /* animation: float 6s ease-in-out infinite; */
+}
+
+.photo-border {
+  margin-top: 3rem;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  border: 2px solid var(--ocean-wave);
+  border-radius: 50%;
+  animation: pulse 4s infinite;
+}
+
+/* Add to existing animations */
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 0.4; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 1024px) {
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .photo-container {
+    margin-top: 100px;
+    margin-left: 0;
+    order: -1;
+  }
+
+  .profile-photo {
+    width: 320px;
+    height: 320px;
+  }
+
+  .text-content {
+    order: 2;
+    max-width: 90%;
+  }
+  .greeting,
+  .tagline {
+    font-size: 1.8rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .bio {
+    font-size: 1rem;
+  }
+
+  .button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}

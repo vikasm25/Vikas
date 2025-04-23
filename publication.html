@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications & Conferences</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/publication.css">
+  </head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/starfish_5015102.png" alt="Logo" class="logo-img">
+            </a>
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="publication.html">Publication</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+  <div class="container">
+
+    <!-- Publications Section -->
+    <section id="publications">
+      <h2 class="section-title">Publications</h2>
+      
+      <!-- Publication Item Example -->
+      <div class="publication-item">
+        <div class="publication-info">
+          <p class="publication-title">" Benzo Alpha Pyrene Inventory in Different Environmental Media, India"</p>
+          <p class="publication-meta">
+            Authors: Priyanka., Meena, V.K., and Qureshi, A.<br>
+            India, Pollution Control for Clean Environment - Volume 1, Proceedings of ICPCCE 2023,<br>
+            2025 | DOI: 10.1007/978-981-97-7842-3_3
+          </p>
+        </div>
+        <div class="publication-link">
+          <a href="https://link.springer.com/chapter/10.1007/978-981-97-7842-3_3" target="_blank" class="publication-button">View Paper</a>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- Conferences Section -->
+    <section id="conferences">
+      <h2 class="section-title">Conferences</h2>
+      
+      <!-- Conference Item Example -->
+      <div class="publication-item">
+        <div class="publication-info">
+          <p class="publication-title"> “Assessing the Influence of Climate Variability on the PCBs Dynamics Using Two
+                                         Different Global Models BETR-Global and MIT-GCM”</p>
+          <p class="publication-meta">
+            Meena, V.K., and Qureshi, A.<br>
+            20th Annual Meeting of the Asia Oceania Geosciences Society (AOGS 2023) at SUNTEC Singapore<br>
+            2023 | Oral Presentation
+          </p>
+        </div>
+      </div>
+      
+      
+    </section>
+
+    
+  </div>
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    
+    menuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+</body>
+</html>

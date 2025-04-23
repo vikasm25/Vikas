@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home| Vikas Kumar Meena</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="assets/images/starfish_5015102.png" alt="Your Logo" class="logo-img">
+            </a>
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="publication.html">Publication</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="particles-js"></div>
+    
+    <main class="hero">
+        <div class="hero-content">
+            <div class="text-content">
+                <h4 class="greeting">Hello!! 🙋‍♂️</h4>
+                <h1 class="name">I am Vikas Kumar Meena</h1>
+                <p class="bio">A Ph.D. (Research Scholar) at Indian Institute of Technology Hyderabad</p>
+                <a href="projects.html" class="button">View My Work</a>
+            </div>
+            <div class="photo-container">
+                <img src="assets/images/home/DSC_4740.JPG" alt="Your Name" class="profile-photo">
+                <div class="photo-border"></div>
+            </div>
+        </div>
+        <div class="water-effect"></div>
+    </main>
+    <script src="js/particles.js"></script>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

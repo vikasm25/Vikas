@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas Meena - Projects</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="assets/images/starfish_5015102.png" alt="Your Logo" class="logo-img">
+            </a>
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="publication.html">Publication</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="projects-container">
+        <section class="projects-header">
+            <h1>My Projects</h1>
+            <p>Here are some of my recent works and research projects</p>
+            <div class="filter-tags">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="research">Research</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="personal">Personal</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+        </section>
+
+        <section class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card" data-category="research">
+                <div class="project-image">
+                    <img src="assets/images/projects/Netcdf_Generator.png" alt="Research Project">
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag python">Python</span>
+                        <span class="tag coding">Coding</span>
+                        <span class="tag personal">Personal</span>
+                    </div>
+                    <h3>Netcdf Generator</h3>
+                    <p style="text-align: justify;">A python based GUI application for converting tabular data (CSV/Excel) to NetCDF format with multi-dimensional support and theme customization.</p>
+                    <div class="project-links">
+                        <a href="assets/pdf/projects/Netcdf_Generator.pdf" target="_blank" class="project-link"><i class="fas fa-file-pdf"></i> Paper</a>
+                        <a href="https://github.com/vikasm25/NetCDF-Generator.git" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more projects as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2023 Vikas Meena. All rights reserved.</p>
+    </footer>
+
+    <script src="js/projects.js"></script>
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
