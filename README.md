@@ -1,4 +1,4 @@
-# 🌐 Vikas M — Personal Portfolio Website
+# 🌐 Personal Portfolio Website
 
 Welcome to the source code for my personal website: [vikasm25.github.io/Vikas](https://vikasm25.github.io/Vikas)
 This website is a digital snapshot of who I am — my background, my work, and how to get in touch.
