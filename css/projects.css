@@ -187,4 +187,10 @@
     .project-card {
         max-width: 100%;
     }
+
+    .project-image {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+  }
 }
