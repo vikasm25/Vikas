@@ -1,0 +1,364 @@
+/* Section Navigation */
+.section-nav {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 3rem;
+  gap: 1rem;
+}
+
+.section-nav-btn {
+  padding: 0.8rem 1.8rem;
+  border: 1px solid #64ffda;
+  background: transparent;
+  color: #64ffda;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.section-nav-btn:hover {
+  background: rgba(100, 255, 218, 0.1);
+}
+
+.section-nav-btn.active {
+  background: rgba(100, 255, 218, 0.2);
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h1 {
+  font-size: 2.5rem;
+  color: #ccd6f6;
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  color: #8892b0;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Filter Buttons */
+.filter-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.filter-btn {
+  padding: 0.6rem 1.4rem;
+  border: 1px solid #64ffda;
+  background: transparent;
+  color: #64ffda;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  background: rgba(100, 255, 218, 0.1);
+}
+
+.filter-btn.active {
+  background: rgba(100, 255, 218, 0.2);
+}
+
+/* Cards Grid (for projects) */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: rgba(10, 25, 47, 0.7);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: confilltain;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.tag.research {
+  background: rgba(156, 39, 176, 0.1);
+  color: #2196f3;
+}
+
+.tag.python {
+  background: rgba(255, 152, 0, 0.1);
+  color: #4caf50;
+}
+
+.tag.web {
+  background: rgba(33, 150, 243, 0.1);
+  color: #ff9800;
+}
+
+.tag.personal {
+  background: rgba(33, 150, 243, 0.1);
+  color: #ee3131;
+}
+
+.tag.coding {
+  background: rgba(33, 150, 243, 0.1);
+  color: #ffffff;
+}
+
+.tag.nlp {
+  background: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+}
+
+.tag.fullstack {
+  background: rgba(103, 58, 183, 0.1);
+  color: #673ab7;
+}
+
+.tag.job {
+  background: rgba(255, 152, 0, 0.1);
+  color: #ff9800;
+}
+
+.tag.internship {
+  background: rgba(33, 150, 243, 0.1);
+  color: #a99ac7;
+}
+
+.tag.education {
+  background: rgba(156, 39, 176, 0.1);
+  color: #2196f3;
+}
+
+.tag.others {
+  background: rgba(156, 39, 176, 0.1);
+  color: #d35dc9;
+}
+
+.card h3 {
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.card-date {
+  color: #8892b0;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  color: #8892b0;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.card-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #64ffda;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.card-link:hover {
+  color: #20b2aa;
+}
+
+.card-link i {
+  font-size: 0.9rem;
+}
+
+/* Section Spacing */
+.section {
+  margin-bottom: 5rem;
+  scroll-margin-top: 80px;
+}
+
+/* EXPERIENCE SECTION STYLES (Single Column) */
+.experience-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.experience-card {
+  background: rgba(10, 25, 47, 0.7);
+  border-radius: 10px;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  display: flex;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.experience-card-image {
+  flex: 0 0 370px;
+  overflow: hidden;
+}
+
+.experience-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transition: transform 0.5s ease;
+}
+
+.experience-card:hover .experience-card-image img {
+  transform: scale(1.05);
+}
+
+.experience-card-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-card h3 {
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.experience-card p {
+  color: #8892b0;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+/* Footer */
+footer {
+  background: rgba(10, 25, 47, 0.9);
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 25, 47, 0.95);
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  .section-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-nav-btn {
+    width: 200px;
+  }
+
+  /* Responsive experience cards */
+  .experience-card {
+    flex-direction: column;
+  }
+
+  .experience-card-image {
+    flex: 0 0 350px;
+  }
+}

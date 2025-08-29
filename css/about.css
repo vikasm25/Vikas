@@ -1,0 +1,389 @@
+/* Section Navigation */
+.section-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  gap: 0.8rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(10, 25, 47, 0.7);
+  border-radius: 10px;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.section-nav-btn {
+  padding: 0.8rem 1.2rem;
+  border: 1px solid #64ffda;
+  background: transparent;
+  color: #64ffda;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-align: center;
+}
+
+.section-nav-btn:hover {
+  background: rgba(100, 255, 218, 0.1);
+}
+
+.section-nav-btn.active {
+  background: rgba(100, 255, 218, 0.2);
+}
+
+/* Main Container */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2.5rem;
+  color: #ccd6f6;
+  margin-bottom: 2rem;
+  text-align: center;
+  scroll-margin-top: 100px;
+}
+
+/* About Content */
+.about-content {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.text-section {
+  flex: 1;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bio-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: #8892b0;
+}
+
+.highlight {
+  color: #64ffda;
+  font-weight: 500;
+}
+
+/* Profile Image */
+.profile-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 2rem;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid rgba(100, 255, 218, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Research Focus Card */
+.research-focus-card {
+  background: rgba(10, 25, 47, 0.7);
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  margin-top: 2rem;
+}
+
+.research-focus-card h2 {
+  color: #ccd6f6;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.research-topics {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.research-topics li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.research-topics li:before {
+  content: "•";
+  color: #64ffda;
+  position: absolute;
+  left: 0;
+}
+
+/* Skills Section */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skill-category {
+  background: rgba(10, 25, 47, 0.7);
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.skill-category h3 {
+  text-align: center;
+  color: #ccd6f6;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #64ffda;
+  padding-bottom: 0.5rem;
+}
+
+.skill-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.bubble {
+  padding: 0.5rem 1rem;
+  background: rgba(100, 255, 218, 0.1);
+  color: #64ffda;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.bubble:hover {
+  background: rgba(100, 255, 218, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Divider */
+.glowing-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #64ffda, transparent);
+  margin: 3rem 0;
+}
+
+/* Education Section */
+.qualification-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.qualification-card {
+  background: rgba(10, 25, 47, 0.7);
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  display: flex;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qualification-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.edu-image {
+  flex: 0 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qualification-photo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.edu-details {
+  flex: 1;
+}
+
+.edu-details h2 {
+  color: #ccd6f6;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.edu-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.institution {
+  color: #64ffda;
+  font-weight: 500;
+}
+
+.duration {
+  color: #8892b0;
+}
+
+/* Certifications Section */
+.certification-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.cert-card {
+  background: rgba(10, 25, 47, 0.7);
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cert-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cert-card h3 {
+  color: #ccd6f6;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.cert-card p {
+  color: #8892b0;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.cert-date {
+  color: #64ffda;
+  font-size: 0.9rem;
+}
+
+/* Achievements Section */
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.achievement-card {
+  background: rgba(10, 25, 47, 0.7);
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.achieve-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievement-card h3 {
+  color: #ccd6f6;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.achievement-card p {
+  color: #64ffda;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 25, 47, 0.95);
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .profile-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .qualification-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .edu-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .certification-grid,
+  .achievement-grid,
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .section-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section-nav-btn {
+    text-align: center;
+  }
+}

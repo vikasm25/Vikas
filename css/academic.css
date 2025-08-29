@@ -1,0 +1,210 @@
+/* Academic Page Styles */
+.academic-container {
+  padding: 80px 5% 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Educational Qualifications */
+.qualification-cards {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.qualification-card {
+  display: flex;
+  background: rgba(17, 34, 64, 0.7);
+  border: 1px solid var(--teal);
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+  max-height: 180px;
+}
+
+.qualification-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Academic.css */
+/* Qualification Cards */
+.qualification-card {
+  display: flex;
+  align-items: center;
+  background: rgba(17, 34, 64, 0.7);
+  border: 1px solid var(--teal);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  transition: transform 0.3s ease;
+  max-height: 150px; /* Reduced card height */
+}
+
+/* Modified CSS for white background */
+.edu-image {
+  margin-left: 30px;
+  width: 120px;
+  height: 120px;
+  background: white; /* White background */
+  padding: 5px; /* Creates white border effect */
+  border: 2px solid var(--teal);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.qualification-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures full image visibility */
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+}
+
+.edu-details {
+  padding: 0 200px;
+  flex-grow: 1;
+}
+
+.edu-details h2 {
+  color: var(--teal);
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.edu-info p {
+  color: var(--light-slate);
+  margin: 4px 0;
+  font-size: 0.9rem;
+}
+
+/* Hover Effects */
+.qualification-card:hover .qualification-photo {
+  transform: scale(1.05);
+}
+
+.qualification-card:hover {
+  box-shadow: 0 4px 15px rgba(32, 178, 170, 0.2);
+}
+
+/* Certifications Grid */
+.certification-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.cert-card {
+  background: rgba(17, 34, 64, 0.7);
+  border: 1px solid var(--teal);
+  border-radius: 8px;
+  padding: 1.2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: scale(1.02);
+}
+
+.cert-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cert-date {
+  color: var(--ocean-wave);
+  font-size: 0.9rem;
+}
+
+/* Achievements Grid */
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.achievement-card {
+  background: rgba(17, 34, 64, 0.7);
+  border: 1px solid var(--teal);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-3px);
+}
+
+.achieve-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Glowing Divider */
+.glowing-divider {
+  height: 1px;
+  background: linear-gradient(90deg, 
+      transparent, 
+      var(--teal), 
+      var(--ocean-wave), 
+      transparent);
+  margin: 2.5rem 0;
+  position: relative;
+  animation: glowPulse 2s infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .certification-grid,
+  .achievement-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .qualification-card {
+      flex-direction: column;
+      max-height: none;
+  }
+  
+  .edu-image {
+      width: 100%;
+      height: 200px;
+  }
+  
+  .certification-grid,
+  .achievement-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .certification-grid,
+  .achievement-grid {
+      grid-template-columns: 1fr;
+  }
+  
+  .glowing-divider {
+      margin: 2rem 0;
+  }
+}
+
+
+.logo-img {
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: rotate(15deg);
+}

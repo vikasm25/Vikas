@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vikas Meena - Portfolio</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img
+            src="assets/images/Logo.png"
+            alt="Your Logo"
+            class="logo-img"
+          />
+        </a>
+        <button class="mobile-menu-btn">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="publication.html">Publication</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Section Navigation -->
+      <div class="section-nav">
+        <button
+          class="section-nav-btn active"
+          onclick="scrollToSection('projects')"
+        >
+          View Projects
+        </button>
+        <button class="section-nav-btn" onclick="scrollToSection('experience')">
+          View Experience
+        </button>
+      </div>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <div class="section-header">
+          <h1>My Projects</h1>
+          <p>Here are some of my recent works and research projects</p>
+          <div class="filter-tags">
+            <button
+              class="filter-btn active"
+              data-filter="all"
+              data-section="projects"
+            >
+              All
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="research"
+              data-section="projects"
+            >
+              Research
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="web"
+              data-section="projects"
+            >
+              Web Development
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="python"
+              data-section="projects"
+            >
+              Python
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="personal"
+              data-section="projects"
+            >
+              Personal
+            </button>
+          </div>
+        </div>
+
+        <div class="cards-grid" id="projects-grid">
+          <!-- Project 1 -->
+          <div class="card" data-category="python personal">
+            <div class="card-image">
+              <img
+                src="assets/images/projects/Netcdf_Generator.png"
+                alt="NetCDF Generator"
+              />
+            </div>
+            <div class="card-content">
+              <div class="card-tags">
+                <span class="tag python">Python</span>
+                <span class="tag coding">Coding</span>
+                <span class="tag personal">Personal</span>
+              </div>
+              <h3>NetCDF Generator</h3>
+              <p class="card-date">June 2025</p>
+              <p style="text-align: justify">
+                NetCDF Generator is a Python-based GUI application that simplifies the conversion of tabular data (CSV/Excel) into structured NetCDF4 datasets with full multi-dimensional support. Built on the Xarray backend, it enables researchers, scientists, and engineers to seamlessly prepare climate, environmental, or geospatial data for advanced modeling and analysis without complex coding. With features like custom grid resolution, NaN/zero handling, and light/dark theme switching, it ensures both flexibility and usability.
+              </p>
+              <div class="card-links">
+                <a href="https://github.com/vikasm25/NetCDF-Generator.git" target="_blank" class="card-link"
+                  ><i class="fab fa-github"></i> Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="card" data-category="web personal">
+            <div class="card-image">
+              <img
+                src="assets/images/projects/Open_Tab_Saver.png"
+                alt="Open Tab Saver"
+              />
+            </div>
+            <div class="card-content">
+              <div class="card-tags">
+                <span class="tag coding">Coding</span>
+                <span class="tag web">Web Development</span>
+                <span class="tag personal">Personal</span>
+              </div>
+              <h3>OpenTab Saver — Capture, store, and restore tabs effortlessly</h3>
+              <p class="card-date">June 2025</p>
+              <p style="text-align: justify">
+                OpenTab Saver is a Chrome extension designed to solve the common problem of tab overload by letting you capture, organize, and restore your open browser tabs anytime. You can take manual or automated snapshots of all your tabs, neatly grouped by date, and easily restore them later with a single click. With export options to CSV, full JSON backups, and a clean, intuitive interface, it ensures that your browsing history becomes an organized knowledge resource rather than digital clutter. This makes it especially valuable for students, researchers, and professionals who juggle multiple workflows and want to boost productivity while keeping their browser tidy.
+
+              </p>
+              <div class="card-links">
+                <a href="https://github.com/vikasm25/Open_Tab_Saver.git" target="_blank" class="card-link"
+                  ><i class="fab fa-github"></i> Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="card" data-category="research">
+            <div class="card-image">
+              <img
+                src="assets/images/projects/Source.png"
+                alt="Research Project"
+              />
+            </div>
+            <div class="card-content">
+              <div class="card-tags">
+                <span class="tag research">Research</span>
+                <span class="tag coding">Coding</span>
+                <span class="tag others">Modelling</span>
+              </div>
+              <h3>Source Apportionment and Seasonal Variation of Atmospheric Pollutants – Sangareddy, Telangana</h3>
+              <p class="card-date">Dec 2022</p>
+              <p style="text-align: justify">
+                Carried out a comprehensive study using ambient air quality data from the year 2019 to identify and characterize the sources of atmospheric pollutants through the U.S. EPA’s Positive Matrix Factorization (PMF) model. Investigated seasonal variations in pollutant levels to understand temporal emission patterns. Used the HYSPLIT model to compute air mass back trajectories and performed PSCF (Potential Source Contribution Function) analysis to assess potential source regions. Data preprocessing and model input preparation were done in Python, while R was used for PSCF plotting and results visualization.
+              </p>
+              <!-- <div class="card-links">
+                <a href="#" target="_blank" class="card-link"
+                  ><i class="fas fa-info-circle"></i> More Info</a
+                >
+              </div> -->
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="card" data-category="research">
+            <div class="card-image">
+              <img
+                src="assets/images/projects/LULC.png"
+                alt="Research Project"
+              />
+            </div>
+            <div class="card-content">
+              <div class="card-tags">
+                <span class="tag research">Research</span>
+                <span class="tag research">Course Work</span>
+              </div>
+              <h3 >Course Project: Impact of Cyclone Titli on Land Use and Land Cover (LULC) – Brahmapur, Odisha</h3>
+              <p class="card-date">June 2022</p>
+              <p style="text-align: justify">
+                Conducted a geospatial analysis to assess the impact of Cyclone Titli on land use and land cover in Brahmapur city as part of coursework. Utilized Sentinel-2 satellite imagery and processed data using the Semi-Automatic Classification Plugin (SCP) in QGIS. Generated false color composites, performed supervised classification, and mapped LULC changes before and after the cyclone. The project demonstrated the role of remote sensing and GIS in disaster impact assessment.
+              </p>
+              <!-- <div class="card-links">
+                <a href="#" target="_blank" class="card-link"
+                  ><i class="fas fa-info-circle"></i> More Info</a
+                >
+              </div> -->
+            </div>
+            </div>
+
+            <!-- Project 5 -->
+          <div class="card" data-category="research">
+            <div class="card-image">
+              <img
+                src="assets/images/projects/Master.png"
+                alt="Master"
+              />
+            </div>
+            <div class="card-content">
+              <div class="card-tags">
+                <span class="tag research">Research</span>
+                <span class="tag research">M.Tech Thesis</span>
+              </div>
+              <h3 >Municipal Water Supply Efficiencies in India – A Comparative Study of Chhattisgarh, Gujarat, Maharashtra & Telangana</h3>
+              <p class="card-date">June 2022</p>
+              <p style="text-align: justify">
+                Evaluated the operational efficiency of 441 urban water utilities across four Indian states using Data Envelopment Analysis (DEA). Identified top-performing utilities through scorecard analysis and applied DEA to assess input-output efficiency. Findings revealed that Maharashtra and Gujarat utilities performed better than those in Chhattisgarh and Telangana, with significant theoretical potential for cost and staff optimization. The study highlighted critical inefficiencies in municipal water supply systems and the need for sustainable resource management
+              </p>
+              <!-- <div class="card-links">
+                <a href="#" target="_blank" class="card-link"
+                  ><i class="fas fa-info-circle"></i> More Info</a
+                >
+            </div> -->
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="section">
+        <div class="section-header">
+          <h1>My Experience</h1>
+          <p>Professional journey and work experience</p>
+          <div class="filter-tags">
+            <button
+              class="filter-btn active"
+              data-filter="all"
+              data-section="experience"
+            >
+              All
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="job"
+              data-section="experience"
+            >
+              Jobs
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="internship"
+              data-section="experience"
+            >
+              Internships
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="education"
+              data-section="experience"
+            >
+              Research / Education
+            </button>
+          </div>
+        </div>
+
+        <div class="experience-cards-container" id="experience-grid">
+          <!-- Experience 1 -->
+          <div class="experience-card" data-category="education">
+            <div class="experience-card-image">
+              <img
+                src="assets/images/projects/Exp_Mercury.png"
+                alt="Mercury Sampling"
+              />
+            </div>
+            <div class="experience-card-content">
+              <div class="card-tags">
+                <span class="tag education">Research / Education</span>
+                <span class="tag education">Sampling</span>
+              </div>
+              <h3>Ambient Air Mercury Sampling</h3>
+              <p class="card-date">Feb 2025 - Present</p>
+              <p style="text-align: justify">
+                Conducting monthly ambient air mercury sampling using glass tube
+                cartridges, as part of a monitoring initiative. Responsible for
+                collecting air samples along with recording associated
+                environmental parameters such as temperature, humidity, and
+                atmospheric pressure. Ensured proper handling, labeling, and
+                documentation of samples in accordance with standard protocols.
+              </p>
+              <div class="card-links">
+                <a
+                  href="https://www.iith.ac.in/"
+                  target="_blank"
+                  class="card-link"
+                  ><i class="fas fa-building"></i> Indian Institute of
+                  Technology Hyderabad</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="experience-card" data-category="education">
+            <div class="experience-card-image">
+              <img
+                src="assets/images/projects/Exp_MRS.png"
+                alt="Web Development Intern"
+              />
+            </div>
+            <div class="experience-card-content">
+              <div class="card-tags">
+                <span class="tag education">Research / Education</span>
+                <span class="tag education">Sampling</span>
+              </div>
+              <h3>Assessment of Road Sweeper Efficiency – TGPCB, Hyderabad</h3>
+              <p class="card-date">Feb 2025 - June 2025</p>
+              <p style="text-align: justify">
+                Conducted road dust sampling across 40+ locations in Hyderabad
+                as part of a Telangana Pollution Control Board (TGPCB) study to
+                evaluate the efficiency of mechanical road sweeping machines.
+                Performed laboratory analyses including Loss on Ignition (LOI),
+                pH, silt content, electrical conductivity, and particle size
+                distribution. Calculated performance parameters and interpreted
+                results to assess cleaning effectiveness. Used QGIS to map
+                sampling locations and Python for data analysis and
+                visualization.
+              </p>
+              <div class="card-links">
+                <a
+                  href="https://www.iith.ac.in/"
+                  target="_blank"
+                  class="card-link"
+                  ><i class="fas fa-building"></i> Indian Institute of
+                  Technology Hyderabad</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="experience-card" data-category="education">
+            <div class="experience-card-image">
+              <img
+                src="assets/images/projects/Exp_Mercury.png"
+                alt="Mercury Sampling"
+              />
+            </div>
+            <div class="experience-card-content">
+              <div class="card-tags">
+                <span class="tag education">Research / Education</span>
+                <span class="tag education">Sampling</span>
+              </div>
+              <h3>APMMN Mercury Sampling</h3>
+              <p class="card-date">Jan 2023 - Present</p>
+              <p style="text-align: justify">
+                Conducted weekly rainwater sampling to support mercury wet
+                deposition monitoring under the Asia Pacific Mercury Monitoring
+                Network (APMMN), through my involvement under a participating
+                research group. Handled sample collection, labeling, and
+                documentation in accordance with network protocols.
+              </p>
+              <div class="card-links">
+                <a
+                  href="https://www.iith.ac.in/"
+                  target="_blank"
+                  class="card-link"
+                  ><i class="fas fa-building"></i> Indian Institute of
+                  Technology Hyderabad</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="js/projects.js"></script>
+  </body>
+</html>

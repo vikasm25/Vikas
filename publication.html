@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publications & Conferences</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/publication.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="assets/images/Logo.png" alt="Logo" class="logo-img" />
+        </a>
+        <button class="mobile-menu-btn">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="publication.html" class="active">Publication</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Section Navigation -->
+      <div class="section-nav">
+        <button
+          class="section-nav-btn active"
+          onclick="scrollToSection('publications')"
+        >
+          View Publications
+        </button>
+        <button
+          class="section-nav-btn"
+          onclick="scrollToSection('conferences')"
+        >
+          View Conferences
+        </button>
+      </div>
+
+      <!-- Publications Section -->
+      <section id="publications">
+        <h2 class="section-title">Publications</h2>
+
+        <!-- Publication Item Example -->
+        <div class="publication-item">
+          <div class="publication-info">
+            <p class="publication-title">
+              "Benzo Alpha Pyrene Inventory in Different Environmental Media,
+              India"
+            </p>
+            <p class="publication-meta">
+              Priyanka., Meena, V.K., and Qureshi, A.<br />
+              Pollution Control for Clean Environment - Volume 1, Proceedings of
+              ICPCCE 2023,<br />
+              2025 | DOI: 10.1007/978-981-97-7842-3_3
+            </p>
+          </div>
+          <div class="publication-link">
+            <a
+              href="https://link.springer.com/chapter/10.1007/978-981-97-7842-3_3"
+              target="_blank"
+              class="publication-button"
+            >
+              <i class="fas fa-external-link-alt"></i> View Paper
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Conferences Section -->
+      <section id="conferences">
+        <h2 class="section-title">Conferences</h2>
+
+        <!-- Conference Item Example -->
+        <div class="publication-item">
+          <div class="publication-info">
+            <p class="publication-title">
+              "Assessing the Oceanic Role in Global PCB Dynamics: Secondary
+              Emissions and Atmospheric Contributions (1930–2018)"
+            </p>
+            <p class="publication-meta">
+              Meena, V.K., and Qureshi, A.<br />
+              EGU General Assembly 2025<br />
+              2025 | Oral Presentation | DOI: 10.5194/egusphere-egu25-17997
+            </p>
+          </div>
+          <div class="publication-link">
+            <a
+              href="https://doi.org/10.5194/egusphere-egu25-17997"
+              target="_blank"
+              class="publication-button"
+            >
+              <i class="fas fa-external-link-alt"></i> View
+            </a>
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <div class="publication-info">
+            <p class="publication-title">
+              "Assessing the Influence of Climate Variability on the PCBs
+              Dynamics Using Two Different Global Models BETR-Global and
+              MIT-GCM"
+            </p>
+            <p class="publication-meta">
+              Meena, V.K., and Qureshi, A.<br />
+              20th Annual Meeting of the Asia Oceania Geosciences Society (AOGS
+              2023) at SUNTEC Singapore<br />
+              2023 | Oral Presentation
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- <footer>
+      <div class="footer-content">
+        <p>&copy; 2023 Vikas Meena. All rights reserved.</p>
+      </div>
+    </footer> -->
+
+    <script src="js/publication.js"></script>
+  </body>
+</html>
