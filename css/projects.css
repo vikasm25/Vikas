@@ -1,3 +1,10 @@
+/* Section Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
 /* Section Navigation */
 .section-nav {
   display: flex;
@@ -362,3 +369,4 @@ footer {
     flex: 0 0 350px;
   }
 }
+
