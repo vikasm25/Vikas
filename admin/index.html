@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vikas Portfolio Admin</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Portfolio Admin</h1>
+      <p>Manage vikasm25/Vikas without editing HTML by hand.</p>
+    </div>
+    <a class="site-link" href="../" target="_blank" rel="noreferrer">Open website ↗</a>
+  </header>
+
+  <main class="shell">
+    <section class="panel auth-panel" id="authPanel">
+      <div>
+        <h2>Connect to GitHub</h2>
+        <p class="muted">Use a fine-grained personal access token limited to <strong>vikasm25/Vikas</strong> with <strong>Contents: Read and write</strong>. The token is stored only in this browser session.</p>
+      </div>
+      <div class="auth-row">
+        <label>
+          GitHub token
+          <input id="token" type="password" autocomplete="off" placeholder="github_pat_…" />
+        </label>
+        <button id="connectBtn" class="primary">Connect</button>
+        <button id="disconnectBtn" class="ghost hidden">Disconnect</button>
+      </div>
+      <div id="connectionStatus" class="status"></div>
+    </section>
+
+    <section class="app-grid hidden" id="appGrid">
+      <aside class="sidebar panel">
+        <button class="nav-btn active" data-view="home">Home</button>
+        <button class="nav-btn" data-view="projects">Projects</button>
+        <button class="nav-btn" data-view="experience">Experience</button>
+        <button class="nav-btn" data-view="publications">Publications</button>
+        <button class="nav-btn" data-view="conferences">Conferences</button>
+        <button class="nav-btn" data-view="advanced">Advanced HTML</button>
+      </aside>
+
+      <section class="panel workspace">
+        <div class="workspace-head">
+          <div>
+            <h2 id="viewTitle">Home</h2>
+            <p id="viewHelp" class="muted">Edit the hero text shown on the home page.</p>
+          </div>
+          <div class="workspace-actions">
+            <button id="reloadBtn" class="ghost">Reload</button>
+            <button id="saveBtn" class="primary">Save & publish</button>
+          </div>
+        </div>
+
+        <div id="notice" class="notice hidden"></div>
+        <div id="editor"></div>
+      </section>
+    </section>
+  </main>
+
+  <template id="listEditorTemplate">
+    <div>
+      <div class="list-toolbar">
+        <p class="muted list-count"></p>
+        <button class="add-btn primary" type="button">+ Add item</button>
+      </div>
+      <div class="item-list"></div>
+    </div>
+  </template>
+
+  <script src="admin.js"></script>
+</body>
+</html>
