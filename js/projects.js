@@ -76,6 +76,7 @@ if (detailCards.length) {
   `;
   document.body.appendChild(modal);
 
+  const modalImageWrap = modal.querySelector(".project-modal-image-wrap");
   const modalImage = modal.querySelector(".project-modal-image");
   const modalTags = modal.querySelector(".project-modal-tags");
   const modalTitle = modal.querySelector("#project-modal-title");
@@ -108,9 +109,14 @@ if (detailCards.length) {
 
   function openDetailsModal(card) {
     const { image, tags, title, date, description, links, isExperience } = getCardParts(card);
+    const imageUrl = image?.src || "";
 
-    modalImage.src = image?.src || "";
+    modalImage.src = imageUrl;
     modalImage.alt = image?.alt || title?.textContent.trim() || "Detail image";
+    modalImageWrap.style.backgroundImage = imageUrl
+      ? `linear-gradient(rgba(2, 12, 27, 0.58), rgba(2, 12, 27, 0.72)), url("${imageUrl}")`
+      : "none";
+
     modalTitle.textContent = title?.textContent.trim() || "Details";
     modalDate.textContent = date?.textContent.trim() || "";
     modalDescription.textContent = description?.textContent.trim() || "";
@@ -129,6 +135,9 @@ if (detailCards.length) {
     } else {
       modalLinks.hidden = true;
     }
+
+    // Always start a newly opened item at the top of the content panel.
+    modal.querySelector(".project-modal-body").scrollTop = 0;
 
     lastFocusedElement = document.activeElement;
     modal.classList.add("is-open");
