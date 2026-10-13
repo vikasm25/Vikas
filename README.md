@@ -11,16 +11,6 @@ Website: [vikasm25.github.io/Vikas](https://vikasm25.github.io/Vikas/)
 - Search on the Projects and Publications pages, plus category filters for projects.
 - Project and experience details in a popup; project images appear there when available.
 
-## Preview Locally
-
-From the project directory, start a local server:
-
-```sh
-python -m http.server 8000
-```
-
-Open [http://localhost:8000/](http://localhost:8000/) in a browser. On Windows, `py -m http.server 8000` also works if Python is installed through the Python launcher.
-
 ## Project Files
 
 | Path | Purpose |
