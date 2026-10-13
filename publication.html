@@ -1,177 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Publications & Conferences</title>
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/publication.css" />
-  </head>
-  <body>
-    <nav>
-      <div class="nav-container">
-        <a href="index.html" class="logo">
-          <img src="assets/images/Logo.png" alt="Logo" class="logo-img" />
-        </a>
-        <button class="mobile-menu-btn">☰</button>
-        <ul class="nav-links">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Journal publications and conference presentations by Vikas Kumar Meena on environmental pollution, ocean dynamics, and atmospheric processes.">
+  <title>Publications & Conferences — Vikas Kumar Meena</title>
+  <script src="js/site.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/site.css">
+  <script src="js/catalog.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Vikas Kumar Meena, home">
+        <span class="brand-mark">VK</span>
+        <span class="brand-copy"><strong>Vikas Kumar Meena</strong><small>Researcher & Engineer</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+        <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="publication.html" class="active">Publication</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="publication.html" aria-current="page">Publications</a></li>
+          <li><a class="nav-contact" href="contact.html">Get in touch ↗</a></li>
         </ul>
-      </div>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Dark mode" aria-pressed="false">
+        <span class="theme-toggle-label">Dark mode</span>
+        <span class="theme-toggle-track" aria-hidden="true"><span class="theme-toggle-thumb"></span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" class="page-main container">
+    <!-- Page introduction and search -->
+    <div class="page-intro">
+      <span class="eyebrow">Research archive</span>
+      <h1>Publications and Conferences</h1>
+      <p class="lead">Peer-reviewed work and conference presentations on pollutants, the atmosphere, and the global ocean.</p>
+    </div>
+    <div class="catalog-toolbar">
+      <label class="search-field">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/></svg>
+        <input type="search" data-catalog-search aria-label="Search publications and conferences" placeholder="Search titles, authors, venues, years…" autocomplete="off">
+      </label>
+      <p class="result-count" data-result-count role="status" aria-live="polite">6 entries</p>
+    </div>
+    <nav class="anchor-tabs" aria-label="Publication page sections">
+      <a href="#publications">Publications</a><a href="#conferences">Conferences</a>
     </nav>
 
-    <div class="container">
-      <!-- Section Navigation -->
-      <div class="section-nav">
-        <button
-          class="section-nav-btn active"
-          onclick="scrollToSection('publications')"
-        >
-          View Publications
-        </button>
-        <button
-          class="section-nav-btn"
-          onclick="scrollToSection('conferences')"
-        >
-          View Conferences
-        </button>
+    <!-- Journal articles and chapters -->
+    <section id="publications" class="catalog-section" data-catalog-section>
+      <div class="catalog-heading">
+        <h2>Publications</h2><span>Peer-reviewed & proceedings</span>
       </div>
+      <div class="publication-list">
+        <article class="publication-row searchable-entry">
+          <time class="publication-year">2026</time>
+          <div>
+            <h3>Present and Future Atmospheric Nitrogen Deposition and Ecological Critical Load Exceedances in National Parks of India</h3>
+            <div class="publication-meta"><span>Shende P., Meena V.K., and Qureshi A.</span><span>ACS ES&T Air</span><span>DOI: 10.1021/acsestair.5c00342</span></div>
+            <span class="publication-type">Journal article</span>
+          </div>
+          <a class="publication-action" href="https://doi.org/10.1021/acsestair.5c00342" target="_blank" rel="noopener noreferrer" aria-label="Read Present and Future Atmospheric Nitrogen Deposition paper">Read paper ↗</a>
+        </article>
+        <article class="publication-row searchable-entry">
+          <time class="publication-year">2025</time>
+          <div>
+            <h3>Benzo Alpha Pyrene Inventory in Different Environmental Media, India</h3>
+            <div class="publication-meta"><span>Priyanka, Meena V.K., and Qureshi A.</span><span>Pollution Control for Clean Environment, Volume 1 · ICPCCE 2023</span><span>DOI: 10.1007/978-981-97-7842-3_3</span></div>
+            <span class="publication-type">Book chapter</span>
+          </div>
+          <a class="publication-action" href="https://link.springer.com/chapter/10.1007/978-981-97-7842-3_3" target="_blank" rel="noopener noreferrer" aria-label="Read Benzo Alpha Pyrene Inventory chapter">Read chapter ↗</a>
+        </article>
+      </div>
+      <div class="empty-state"><strong>No publications found.</strong>Try a different title, author, or year.</div>
+    </section>
 
-      <!-- Publications Section -->
-      <section id="publications">
-        <h2 class="section-title">Publications</h2>
+    <!-- Conference talks and posters -->
+    <section id="conferences" class="catalog-section" data-catalog-section>
+      <div class="catalog-heading">
+        <h2>Conferences</h2><span>Talks & posters</span>
+      </div>
+      <div class="publication-list">
+        <article class="publication-row searchable-entry">
+          <time class="publication-year">2026</time>
+          <div>
+            <h3>Spatial Distribution of PCB28 and PCB153 in Deep Oceans Using a Global Multimedia Model</h3>
+            <div class="publication-meta"><span>Meena, V.K., and Qureshi, A.</span><span>SETAC Europe 36th Annual Meeting</span></div>
+            <span class="publication-type">Poster presentation</span>
+          </div>
+        </article>
+        <article class="publication-row searchable-entry">
+          <time class="publication-year">2026</time>
+          <div>
+            <h3>Partitioning Dynamics of PCB 28 and PCB 153 in Global Surface Oceans</h3>
+            <div class="publication-meta"><span>Meena, V.K., and Qureshi, A.</span><span>World Ocean Science Congress (WOSC)</span></div>
+            <span class="publication-type">Oral presentation</span>
+          </div>
+        </article>
+        <article class="publication-row searchable-entry">
+          <time class="publication-year">2025</time>
+          <div>
+            <h3>Assessing the Oceanic Role in Global PCB Dynamics: Secondary Emissions and Atmospheric Contributions (1930–2018)</h3>
+            <div class="publication-meta"><span>Meena, V.K., and Qureshi, A.</span><span>EGU General Assembly 2025</span><span>DOI: 10.5194/egusphere-egu25-17997</span></div>
+            <span class="publication-type">Oral presentation</span>
+          </div>
+          <a class="publication-action" href="https://doi.org/10.5194/egusphere-egu25-17997" target="_blank" rel="noopener noreferrer" aria-label="View EGU General Assembly presentation">View abstract ↗</a>
+        </article>
+        <article class="publication-row searchable-entry">
+          <time class="publication-year">2023</time>
+          <div>
+            <h3>Assessing the Influence of Climate Variability on the PCBs Dynamics Using Two Different Global Models BETR-Global and MIT-GCM</h3>
+            <div class="publication-meta"><span>Meena, V.K., and Qureshi, A.</span><span>20th Annual Meeting of the Asia Oceania Geosciences Society (AOGS 2023), SUNTEC Singapore</span></div>
+            <span class="publication-type">Oral presentation</span>
+          </div>
+        </article>
+      </div>
+      <div class="empty-state"><strong>No conferences found.</strong>Try a different title, venue, or year.</div>
+    </section>
+  </main>
 
-        <!-- Publication Item 2 -->
-        <div class="publication-item">
-          <div class="publication-info">
-            <p class="publication-title">
-              "Present and Future Atmospheric Nitrogen Deposition and Ecological Critical Load Exceedances in National Parks of India"
-            </p>
-            <p class="publication-meta">
-              Shende P., Meena V.K., and Qureshi A.<br />
-              ACS ES&T Air <br />
-              2026 | DOI: 10.1021/acsestair.5c00342
-            </p>
-          </div>
-          <div class="publication-link">
-            <a
-              href="https://doi.org/10.1021/acsestair.5c00342"
-              target="_blank"
-              class="publication-button"
-            >
-              <i class="fas fa-external-link-alt"></i> View Paper
-            </a>
-          </div>
-        </div>
-        
-        <!-- Publication Item 1 -->
-         <div class="publication-item">
-          <div class="publication-info">
-            <p class="publication-title">
-              "Benzo Alpha Pyrene Inventory in Different Environmental Media,
-              India"
-            </p>
-            <p class="publication-meta">
-              Priyanka, Meena V.K., and Qureshi A.<br />
-              Pollution Control for Clean Environment - Volume 1, Proceedings of
-              ICPCCE 2023,<br />
-              2025 | DOI: 10.1007/978-981-97-7842-3_3
-            </p>
-          </div>
-          <div class="publication-link">
-            <a
-              href="https://link.springer.com/chapter/10.1007/978-981-97-7842-3_3"
-              target="_blank"
-              class="publication-button"
-            >
-              <i class="fas fa-external-link-alt"></i> View Paper
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Conferences Section -->
-      <section id="conferences">
-        <h2 class="section-title">Conferences</h2>
-
-        <div class="publication-item">
-          <div class="publication-info">
-            <p class="publication-title">
-              "Spatial Distribution of PCB28 and PCB153 in Deep Oceans Using a Global Multimedia Model"
-            </p>
-            <p class="publication-meta">
-              Meena, V.K., and Qureshi, A.<br />
-              SETAC Europe 36th Annual Meeting<br />
-              2026 | Poster Presentation
-            </p>
-          </div>
-        </div>
-        <!-- --------------- -->
-        <div class="publication-item">
-          <div class="publication-info">
-            <p class="publication-title">
-              "Partitioning Dynamics of PCB 28 and PCB 153 in Global surface oceans"
-            </p>
-            <p class="publication-meta">
-              Meena, V.K., and Qureshi, A.<br />
-              World Ocean Science Congress (WOSC)<br />
-              2026 | Oral Presentation
-            </p>
-          </div>
-        </div>
-        <!-- --------------- -->
-        <div class="publication-item">
-          <div class="publication-info">
-            <p class="publication-title">
-              "Assessing the Oceanic Role in Global PCB Dynamics: Secondary
-              Emissions and Atmospheric Contributions (1930–2018)"
-            </p>
-            <p class="publication-meta">
-              Meena, V.K., and Qureshi, A.<br />
-              EGU General Assembly 2025<br />
-              2025 | Oral Presentation | DOI: 10.5194/egusphere-egu25-17997
-            </p>
-          </div>
-          <div class="publication-link">
-            <a
-              href="https://doi.org/10.5194/egusphere-egu25-17997"
-              target="_blank"
-              class="publication-button"
-            >
-              <i class="fas fa-external-link-alt"></i> View
-            </a>
-          </div>
-        </div>
-        <!-- --------------- -->
-        <div class="publication-item">
-          <div class="publication-info">
-            <p class="publication-title">
-              "Assessing the Influence of Climate Variability on the PCBs
-              Dynamics Using Two Different Global Models BETR-Global and
-              MIT-GCM"
-            </p>
-            <p class="publication-meta">
-              Meena, V.K., and Qureshi, A.<br />
-              20th Annual Meeting of the Asia Oceania Geosciences Society (AOGS
-              2023) at SUNTEC Singapore<br />
-              2023 | Oral Presentation
-            </p>
-          </div>
-        </div>
-      </section>
+  <footer class="site-footer site-footer--simple">
+    <div class="container footer-bottom">
+      <p>© 2026 Vikas Kumar Meena</p>
+      <p>Environmental engineering · Hyderabad, India</p>
     </div>
-
-    <!-- <footer>
-      <div class="footer-content">
-        <p>&copy; 2023 Vikas Meena. All rights reserved.</p>
-      </div>
-    </footer> -->
-
-    <script src="js/publication.js"></script>
-  </body>
+  </footer>
+</body>
 </html>
-

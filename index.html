@@ -1,63 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Vikas Kumar Meena</title>
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/home.css" />
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  </head>
-  <body>
-    <nav>
-      <div class="nav-container">
-        <a href="index.html" class="logo">
-          <img src="assets/images/Logo.png" alt="Your Logo" class="logo-img" />
-        </a>
-        <button class="mobile-menu-btn">☰</button>
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vikas Kumar Meena is a Ph.D. researcher in environmental engineering at IIT Hyderabad, studying pollutant fate and transport in deep oceans.">
+  <title>Vikas Kumar Meena — Environmental Researcher</title>
+  <script src="js/site.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Vikas Kumar Meena, home">
+        <span class="brand-mark">VK</span>
+        <span class="brand-copy"><strong>Vikas Kumar Meena</strong><small>Researcher & Engineer</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="publication.html">Publication</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="publication.html">Publications</a></li>
+          <li><a class="nav-contact" href="contact.html">Get in touch ↗</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Dark mode" aria-pressed="false">
+        <span class="theme-toggle-label">Dark mode</span>
+        <span class="theme-toggle-track" aria-hidden="true"><span class="theme-toggle-thumb"></span></span>
+      </button>
+    </div>
+  </header>
 
-    <div id="particles-js"></div>
-
-    <main class="home">
-      <div class="home-content">
-        <div class="text-content">
-          <h4 class="greeting">Hello!! 🙋‍♂️</h4>
-          <h1 class="name">I am Vikas Kumar Meena</h1>
-          <p class="bio">
-            A Ph.D. Research Scholar at Indian Institute of Technology
-            Hyderabad.
-          </p>
-          <a href="projects.html" class="button">View My Work</a>
+  <main id="main" class="page-main">
+    <!-- Introduction -->
+    <section class="home-hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Environmental engineering · IIT Hyderabad</span>
+          <h1 id="hero-title">Understanding Where Pollutants <em>Go Next</em></h1>
+          <p>I'm Vikas Kumar Meena, a Ph.D. researcher studying how persistent pollutants such as PCBs move between the atmosphere, surface ocean, and deep ocean.</p>
+          <div class="hero-actions">
+            <a class="button" href="projects.html">Explore my work <span aria-hidden="true">↗</span></a>
+            <a class="button secondary" href="about.html">More about me</a>
+          </div>
         </div>
-        <div class="photo-container">
-          <img
-            src="assets/images/home/DSC_4740.JPG"
-            alt="Vikas Kumar Meena"
-            class="profile-photo"
-          />
-          <div class="photo-border"></div>
+        <div class="hero-visual">
+          <img src="assets/images/home/DSC_4740.jpg" alt="Portrait of Vikas Kumar Meena outdoors" fetchpriority="high">
         </div>
       </div>
-    </main>
+    </section>
 
-    <script src="js/particles.js"></script>
-    <script>
-      // Mobile menu toggle
-      const menuBtn = document.querySelector(".mobile-menu-btn");
-      const navLinks = document.querySelector(".nav-links");
+    <!-- Research focus -->
+    <section class="container home-section" aria-labelledby="focus-heading">
+      <div class="section-heading">
+        <div><span class="eyebrow">What drives my work</span><h2 id="focus-heading">Research Focus</h2></div>
+        <a class="section-link" href="about.html#research">About my research ↗</a>
+      </div>
+      <div class="focus-grid">
+        <article class="focus-card">
+          <span class="number">01 / OCEANS</span>
+          <h3>Deep Ocean Transport</h3>
+          <p>Tracing how pollutants such as PCBs move between surface waters and the deep ocean.</p>
+        </article>
+        <article class="focus-card">
+          <span class="number">02 / MODELS</span>
+          <h3>Environmental Modelling</h3>
+          <p>Using global environmental and ocean models to examine pollutant pathways and long-range transport.</p>
+        </article>
+        <article class="focus-card">
+          <span class="number">03 / FIELDWORK</span>
+          <h3>Atmospheric and Field Studies</h3>
+          <p>Monitoring mercury and atmospheric conditions to connect research with observations.</p>
+        </article>
+      </div>
+    </section>
 
-      menuBtn.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-    </script>
-  </body>
+    <!-- Featured work -->
+    <section class="container home-section" aria-labelledby="explore-heading">
+      <div class="section-heading">
+        <div><span class="eyebrow">Selected directions</span><h2 id="explore-heading">Explore the Work</h2></div>
+        <p>Research, practical tools, and presentations shaped by a curiosity about environmental systems.</p>
+      </div>
+      <div class="feature-grid">
+        <a class="feature-card featured" href="publication.html#conferences">
+          <span class="pill">Featured research · 2026</span>
+          <div><h3>PCB 28 and PCB 153 in Deep Oceans</h3><p>Presented at the SETAC Europe 36th Annual Meeting.</p></div>
+          <span class="feature-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="feature-card" href="projects.html">
+          <span class="pill">Projects & experience</span>
+          <div><h3>Environmental Research and Software Tools</h3><p>Browse research studies, data tools, and fieldwork.</p></div>
+          <span class="feature-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div><span class="eyebrow">Let's connect</span><h2>Research and Collaboration</h2></div>
+      <a class="button secondary" href="contact.html">Get in touch <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Vikas Kumar Meena</p>
+      <p>Environmental engineering · Hyderabad, India</p>
+    </div>
+  </footer>
+</body>
 </html>
