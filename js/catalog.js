@@ -35,19 +35,6 @@ filterButtons.forEach((button) => {
 });
 updateCatalog();
 
-// A project link appears only when its card has a destination URL.
-document.querySelectorAll(".work-card[data-project-url]").forEach((card) => {
-  const url = card.dataset.projectUrl.trim();
-  if (!url) return;
-
-  const link = document.createElement("a");
-  link.href = url;
-  link.target = "_blank";
-  link.rel = "noopener noreferrer";
-  link.textContent = "Visit Project ↗";
-  card.querySelector(".work-card-bottom")?.appendChild(link);
-});
-
 // The Projects page uses one dialog for all project and experience cards.
 const dialog = document.querySelector("#detail-dialog");
 if (dialog) {
@@ -59,7 +46,7 @@ if (dialog) {
       const card = button.closest(".searchable-entry");
       const imageSrc = card.dataset.imageSrc;
       const dialogImage = dialog.querySelector(".dialog-image");
-      const sourceLinks = card.querySelectorAll(".work-card-bottom a");
+      const sourceLinks = card.querySelectorAll(".work-card-bottom a:not([hidden])");
       opener = button;
 
       dialog.querySelector("#dialog-title").textContent = card.querySelector("h3").textContent;
